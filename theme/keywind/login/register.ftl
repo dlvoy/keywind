@@ -73,6 +73,7 @@
       </#if>
       <#if recaptchaRequired??>
         <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}" data-size="compact"></div>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       </#if>
       <@buttonGroup.kw>
         <@button.kw color="primary" type="submit">
@@ -86,4 +87,3 @@
     </@link.kw>
   </#if>
 </@layout.registrationLayout>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
